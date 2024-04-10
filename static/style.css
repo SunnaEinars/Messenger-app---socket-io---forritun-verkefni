@@ -12,22 +12,29 @@ body {
     height: 100vh;
 }
 
+.site-title {
+    width: 100%;
+    margin-top: 100px;
+    border-bottom: 1px solid;
+    text-align: center;
+}
 
 .rooms-container {
-    width: 80%;
+    width: 600px;
+    padding: 5px 15px;
     display: flex;
     justify-content: center;
     gap: 20px;
     align-items: center;
     flex-direction: row;
-    border: 1px solid pink;
+    box-shadow: 2px 1px 2px 1px #dbd0d0;
 }
 
 .available-rooms {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-evenly;
+    justify-content: flex-start;
     gap: 10px;
     list-style: none;
 }
@@ -40,17 +47,48 @@ body {
     flex: 1;
 }
 
+.room-button {
+    background-color: lightblue;
+    border: 1px solid rgb(18, 132, 170);
+    border-radius: 15px;
+    min-width: 70px;
+}
+
+.room-buton:active {
+    background-color: pink;
+}
+
+#newRoomName {
+    border: 1px solid black;
+    padding: 3px;
+}
+
+#roomCreation input[type=text] {
+    padding: 5px;
+}
+
+#createRoom {
+    background-color: orange;
+    padding: 5px;
+    border: 1px solid rgb(185, 130, 27);
+    border-radius: 5px;
+    min-width: 100px;
+
+}
+
 .this-rooms-container {
-    border: 1px solid yellow;
-    width: 80%;
+
+    padding: 10px 15px;
+    width: 600px;
     display: flex;
     flex-direction: row;
+    box-shadow: 2px 1px 2px 1px #dbd0d0;
 }
 
 .this-room-sidebar {
     border: 1px solid orange;
     flex: 1;
-    border: 2px solid #333;
+    border: 2px solid #cbc2c2;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0,0,0,0.1);
     background: #fff;
@@ -63,12 +101,20 @@ body {
 
 .this-room-sidebar h3 {
     text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    border-bottom: 2px solid black;
+}
+
+
+
+.current-users li {
+    list-style: none;
 }
 
 .chat-container {
     width: 60%;
     flex: 2;
-    border: 2px solid #333;
+    border: 2px solid #cbc2c2;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0,0,0,0.1);
     background: #fff;
